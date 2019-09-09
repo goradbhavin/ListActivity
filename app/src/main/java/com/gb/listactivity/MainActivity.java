@@ -31,9 +31,8 @@ public class MainActivity extends ListActivity {
 
     @Override
     protected void onListItemClick(ListView l, View v, int position, long id) {
-        String name = (String) getListView().getAdapter().getItem(position);
-        String selectedItem = (String) getListView().getItemAtPosition(position);
 
+        String selectedItem = (String) getListView().getItemAtPosition(position);
         Toast.makeText(this,selectedItem,Toast.LENGTH_LONG).show();
     }
 }
